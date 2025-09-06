@@ -164,7 +164,7 @@ h1{
 .quiz-page{
     display: none;
     font-family: "Roboto", sans-serif;
-    max-width: 900px;
+    width: 900px;
     margin: 0 auto;
     padding: 16px;
 }
@@ -261,4 +261,14 @@ h1{
 }
 .quiz-result .confirm-btn{
     margin-top: 20px;
+}
+
+@media screen and (max-width: 375px){
+  .quiz-page{
+    width: 360px;
+  }
+  .quiz-page .choices{
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
 }
